@@ -1,0 +1,137 @@
+@import "tailwindcss";
+/* @import url('https://fonts.cdnfonts.com/css/birthday-2'); */
+@font-face {
+    font-family: 'Havana';
+    src: url('/font/Havana/Havana.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .heading {
+    font-family: 'Havana', sans-serif;
+
+  }
+  
+
+
+  .cloth-heart {
+    width: 240px;
+    height: 240px;
+    background:
+      url('https://www.transparenttextures.com/patterns/fabric-of-squares.png'),
+      linear-gradient(to bottom right, #d30808, #fdd0f3);
+    background-blend-mode: multiply;
+    background-size: cover;
+    filter: url(#wrinkle);
+    clip-path: path('M 120 240 Q 20 150 60 80 A 40 40 0 0 1 120 100 A 40 40 0 0 1 180 80 Q 220 150 120 240 Z');
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    animation: fallHeart 4s ease-out forwards;
+    position: absolute;
+    top: -300px;
+  }
+  
+  @keyframes fallHeart {
+    0% {
+      top: -300px;
+      transform: rotate(-10deg);
+    }
+    60% {
+      top: 300px;
+      transform: rotate(5deg);
+    }
+    100% {
+      top: 280px;
+      transform: rotate(0deg);
+    }
+  }
+
+  .balloon-wrapper {
+    position: relative;
+    /* animation: float 6s ease-in-out infinite; */
+    transform-origin: bottom center;
+  }
+  
+  .balloon {
+    width: 100px;
+    height: 130px;
+    background: radial-gradient(circle at 30% 30%, #ff4e9b, #e60073);
+    border-radius: 50% 50% 50% 50% / 55% 55% 45% 45%;
+    position: absolute;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .balloon::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background: #e60073;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: 1;
+  }
+  
+  .string {
+    width: 2px;
+    position: absolute;
+    top: 140px;
+    left:50px;
+    z-index: 0;
+    height: 100px;
+    background: #aaa;
+    margin-top: -2px;
+    animation: wave 2s ease-in-out infinite;
+  }
+  .red .balloon {
+    background: radial-gradient(circle at 30% 30%, #ff4e4e, #cc0000);
+}
+
+.red .balloon::after {
+    background: #cc0000;
+}
+
+.blue .balloon {
+    background: radial-gradient(circle at 30% 30%, #4ecaff, #007acc);
+    /* animation-delay: 0.3; */
+}
+
+.blue .balloon::after {
+    background: #007acc;
+}
+
+.green .balloon {
+    background: radial-gradient(circle at 30% 30%, #70ff8f, #00aa44);
+    animation-delay: 0.2;
+}
+
+.green .balloon::after {
+    background: #00aa44;
+}
+
+.yellow .balloon {
+    background: radial-gradient(circle at 30% 30%, #fff76e, #ffaa00);
+}
+
+  .yellow .balloon::after {
+    background: #ffaa00;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-30px) rotate(2deg);
+    }
+  }
+  
+  @keyframes wave {
+    0%, 100% {
+      transform: rotate(2deg);
+    }
+    50% {
+      transform: rotate(-2deg);
+    }
+  }

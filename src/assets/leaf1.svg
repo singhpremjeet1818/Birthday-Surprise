@@ -1,0 +1,23 @@
+<svg
+  width="100"
+  height="150"
+  viewBox="0 0 100 150"
+  xmlns="http://www.w3.org/2000/svg"
+  fill="green"
+>
+  <!-- Leaf Shape -->
+  <path
+    d="M50 10
+       C20 40, 5 90, 50 140
+       C95 90, 80 40, 50 10Z"
+    stroke="darkgreen"
+    stroke-width="2"
+    fill="green"
+  />
+  <!-- Leaf Vein -->
+  <path
+    d="M50 10 L50 140"
+    stroke="darkgreen"
+    stroke-width="2"
+  />
+</svg>

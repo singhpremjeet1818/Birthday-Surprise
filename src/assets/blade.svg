@@ -1,0 +1,19 @@
+<svg
+  width="30"
+  height="550"
+  viewBox="0 0 30 550"
+  preserveAspectRatio="none"
+  xmlns="http://www.w3.org/2000/svg"
+  fill="green"
+>
+  <path
+    d="
+      M15,0 
+      C12,180 
+      18,280 
+      15,550 
+      L0,550 
+      L30,550 
+      Z"
+  />
+</svg>
