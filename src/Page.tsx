@@ -15,8 +15,8 @@ const Page = () => {
     transition={{duration:1,ease:easeOut,delay:0}} className='heading text-black text-center w-full text-[60px] sm:text-[80px] md:text-[100px]'>Happy Birthday</motion.h1>
       <motion.div initial={{opacity:0,y:100}} 
     animate={{opacity:1,y:0}} 
-    transition={{duration:1,ease:easeOut,delay:0}} className='heading text-black text-2xl sm:text-3xl mt-5'>
-      Wishing you a truly wonderful birthday filled with love, laughter, and everything that brings you happiness. Birthdays are not just about celebrating another year gone by, but also appreciating how far you've come, the lives you've touched, and the memories you've made along the way. May this year open new doors, bring exciting opportunities, and surround you with people who genuinely care about you. Take a moment to reflect on your journey, be proud of your growth, and look ahead with hope and confidence. No matter where life takes you, may you always find reasons to smile, lessons to learn, and moments to cherish. Have an amazing day and a year ahead that's as incredible as you are.
+    transition={{duration:1,ease:easeOut,delay:0}} className='heading text-black text-[30px] sm:text-3xl mt-5'>
+      Hello, Akriti, Wishing you a truly wonderful birthday filled with love, laughter, and everything that brings you happiness. First of all, take a moment, and appreciate yourself on how far you've come, the lives you've touched, and the memories you've made along the way. May this year open new doors, bring exciting opportunities, and surround you with people who genuinely care about you. Always look ahead with hope and confidence. No matter where life takes you, may you always find reasons to smile, and always remember that there are people who genuinely care about you, And yeah......just enjoy the day, Have an amazing day and a year ahead that's as incredible as you are.
       </motion.div>
     <div className='absolute -bottom-14 -right-20 w-80 mix-blend-darken opacity-50'>
     <img src={inkpot} alt="" />
